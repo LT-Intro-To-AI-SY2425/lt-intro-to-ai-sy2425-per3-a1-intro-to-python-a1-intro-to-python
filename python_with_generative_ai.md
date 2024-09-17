@@ -17,6 +17,26 @@ Absolutely! Here's a set of beginner-intermediate level programming challenges i
 **1. Palindrome Checker:**
 Write a program that checks if a given string is a palindrome (reads the same forwards and backwards).
 
+def is_palindrome(s):
+    # Remove any spaces and convert to lowercase for uniformity
+    s = s.replace(" ", "").lower()
+    
+    # Compare the string with its reverse
+    return s == s[::-1]
+
+def main():
+    print("Enter a string to check if it's a palindrome:")
+    user_input = input()
+    
+    if is_palindrome(user_input):
+        print("The string is a palindrome.")
+    else:
+        print("The string is not a palindrome.")
+
+if __name__ == "__main__":
+    main()
+
+
 **2. FizzBuzz:**
 Write a program that prints numbers from 1 to 100. For multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
 
