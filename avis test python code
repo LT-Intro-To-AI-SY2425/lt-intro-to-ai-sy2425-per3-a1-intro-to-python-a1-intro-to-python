@@ -59,5 +59,6 @@ T = TypeVar("T")
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
-
+    print(absolute(-1))
+    print(factorial(5))
     print("All tests passed!")
