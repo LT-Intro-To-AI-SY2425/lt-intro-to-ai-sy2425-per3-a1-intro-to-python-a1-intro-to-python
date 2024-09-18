@@ -43,6 +43,27 @@ Write a program that prints numbers from 1 to 100. For multiples of 3, print "Fi
 **3. Prime Number Checker:**
 Write a program that checks whether a given number is prime or not.
 
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+# Example usage
+number = int(input("Enter a number: "))
+if is_prime(number):
+    print(f"{number} is a prime number.")
+else:
+    print(f"{number} is not a prime number.")
+    
 **4. Word Counter:**
 Create a program that takes a sentence as input and counts the number of words in it.
 
