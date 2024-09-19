@@ -25,8 +25,11 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
+if n < 0:
+        return -n
+    else:
+        return n
     raise NotImplementedError("absolute")
-
 
 def factorial(n: int) -> int:
     """Takes a number n, and computes the factorial n! You can assume the passed in
@@ -38,6 +41,16 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
+    raise NotImplementedError("factorial")
+
+ if n == 0:
+        return 1  # The factorial of 0 is 1 by definition.
+    
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    
+    return result    
     raise NotImplementedError("factorial")
 
 
