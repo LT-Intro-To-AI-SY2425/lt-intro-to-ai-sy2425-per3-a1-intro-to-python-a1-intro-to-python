@@ -132,7 +132,24 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     """
     raise NotImplementedError("duck_duck_goose")
 
-
+def duck_duck_goose(lst: List[str]) -> List[str];
+i = 0
+current = "duck1"
+while len(1st) > 2:
+    if current =="duck1":
+        current = "duck2"
+        i += 1
+    elif current == "duck2";
+        current = "goose"
+        i += 1
+    else:
+        current = "duck1"
+        lst.pop(i)
+# wrap around if we get to the end
+if i = len(lst):
+    i = 0;
+# Alertnate - i %= len(lst)
+return 1st;
 # this line causes the nested code to be skipped if the file is imported instead of run
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
