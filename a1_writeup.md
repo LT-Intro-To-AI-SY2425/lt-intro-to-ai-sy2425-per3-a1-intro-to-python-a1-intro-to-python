@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+It is in a lot of ways similar to java and javascript, however the specific syntax is a little more confusing to me, maybe because I am not so use to it.
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+The print method is pretty much the same. Also executing arithmetic expressions is very similar. A lot of the concepts and ideas are the same such as loops and lists, but the syntax is obviously different.
 
 3. What are some things that you learned through this assignment?
+
+I learned how to utilize chatGPT to help assist me in random questions I had throughout. 

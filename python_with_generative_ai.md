@@ -17,12 +17,63 @@ Absolutely! Here's a set of beginner-intermediate level programming challenges i
 **1. Palindrome Checker:**
 Write a program that checks if a given string is a palindrome (reads the same forwards and backwards).
 
+def is_palindrome(s):
+    # Remove any spaces and convert to lowercase for uniformity
+    s = s.replace(" ", "").lower()
+    
+    # Compare the string with its reverse
+    return s == s[::-1]
+
+def main():
+    print("Enter a string to check if it's a palindrome:")
+    user_input = input()
+    
+    if is_palindrome(user_input):
+        print("The string is a palindrome.")
+    else:
+        print("The string is not a palindrome.")
+
+if __name__ == "__main__":
+    main()
+
+
 **2. FizzBuzz:**
 Write a program that prints numbers from 1 to 100. For multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
+
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
 
 **3. Prime Number Checker:**
 Write a program that checks whether a given number is prime or not.
 
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+# Example usage
+number = int(input("Enter a number: "))
+if is_prime(number):
+    print(f"{number} is a prime number.")
+else:
+    print(f"{number} is not a prime number.")
+    
 **4. Word Counter:**
 Create a program that takes a sentence as input and counts the number of words in it.
 

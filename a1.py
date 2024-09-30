@@ -25,8 +25,11 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
+if n < 0:
+        return -n
+    else:
+        return n
     raise NotImplementedError("absolute")
-
 
 def factorial(n: int) -> int:
     """Takes a number n, and computes the factorial n! You can assume the passed in
@@ -38,6 +41,16 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
+    raise NotImplementedError("factorial")
+
+ if n == 0:
+        return 1  # The factorial of 0 is 1 by definition.
+    
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    
+    return result    
     raise NotImplementedError("factorial")
 
 
@@ -119,7 +132,24 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     """
     raise NotImplementedError("duck_duck_goose")
 
-
+def duck_duck_goose(lst: List[str]) -> List[str];
+i = 0
+current = "duck1"
+while len(1st) > 2:
+    if current =="duck1":
+        current = "duck2"
+        i += 1
+    elif current == "duck2";
+        current = "goose"
+        i += 1
+    else:
+        current = "duck1"
+        lst.pop(i)
+# wrap around if we get to the end
+if i = len(lst):
+    i = 0;
+# Alertnate - i %= len(lst)
+return 1st;
 # this line causes the nested code to be skipped if the file is imported instead of run
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
